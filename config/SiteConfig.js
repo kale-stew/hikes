@@ -12,9 +12,9 @@ module.exports = {
   ogSiteName: '@TODO', // Facebook Site Name
   googleAnalyticsID: 'UA-12345689-1',
   copyright: 'Copyright © 2017. All rights reserved.',
-  client: 'Client',
+  where: 'Location',
   date: 'Date',
-  service: 'Service',
+  state: 'State',
   dateFormat: 'MM.DD.YYYY',
   // Manifest and Progress color
   themeColor: '#3498DB',

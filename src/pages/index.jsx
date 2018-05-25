@@ -31,8 +31,8 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            service
-            client
+            state
+            where
             cover {
               childImageSharp {
                 sizes(maxWidth: 850, quality: 90, traceSVG: { color: "#f3f3f3" }) {

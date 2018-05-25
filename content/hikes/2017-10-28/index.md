@@ -1,11 +1,22 @@
 ---
-client: "Yosemite"
+where: "Yosemite"
 title: "Some Trail in Yosemite"
 cover: "./yosemite.jpg"
 date: "2016-08-10"
-service: "NW"
+state: "California"
 ---
-# Description
+
+## Background
+
+### AllTrails
+
+### On a Map
+
+## Description
+
+## More Resources
+
+## Photo Gallery
 
 ![View from the trail](./yosemite.jpg)
 

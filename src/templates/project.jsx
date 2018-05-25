@@ -8,7 +8,7 @@ import Footer from '../components/Footer/Footer';
 import Container from '../components/Container/Container';
 import styles from './project.module.scss';
 
-const Project = props => {
+const Project = (props) => {
   const { slug } = props.pathContext;
   const postNode = props.data.markdownRemark;
   const project = postNode.frontmatter;
@@ -32,10 +32,10 @@ const Project = props => {
               <div className={styles.information}>
                 <div className={styles.infoBlock}>
                   <Fade up duration={1250} className={styles.top}>
-                    {config.client}
+                    {config.where}
                   </Fade>
                   <Fade up duration={1250} delay={500} className={styles.bottom}>
-                    {project.client}
+                    {project.where}
                   </Fade>
                 </div>
                 <div className={styles.infoBlock}>
@@ -48,10 +48,10 @@ const Project = props => {
                 </div>
                 <div className={styles.infoBlock}>
                   <Fade up duration={1250} className={styles.top}>
-                    {config.service}
+                    {config.state}
                   </Fade>
                   <Fade up duration={1250} delay={500} className={styles.bottom}>
-                    {project.service}
+                    {project.state}
                   </Fade>
                 </div>
               </div>
@@ -77,8 +77,8 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "DD.MM.YYYY")
-        client
-        service
+        where
+        state
         cover {
           childImageSharp {
             resize(width: 800) {

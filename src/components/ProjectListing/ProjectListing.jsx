@@ -7,12 +7,12 @@ import styles from './ProjectListing.module.scss';
 export default class ProjectListing extends React.PureComponent {
   getList() {
     const List = [];
-    this.props.projectEdges.forEach(projectEdge => {
+    this.props.projectEdges.forEach((projectEdge) => {
       List.push({
         path: projectEdge.node.fields.slug,
         cover: projectEdge.node.frontmatter.cover.childImageSharp.sizes,
-        client: projectEdge.node.frontmatter.client,
-        service: projectEdge.node.frontmatter.service,
+        where: projectEdge.node.frontmatter.where,
+        state: projectEdge.node.frontmatter.state,
         imageURL: projectEdge.node.frontmatter.cover.childImageSharp.sizes.src,
       });
     });
@@ -32,11 +32,11 @@ export default class ProjectListing extends React.PureComponent {
                 <Palette image={project.imageURL}>
                   {palette => <div className={styles.overlay} style={{ backgroundColor: palette.vibrant }} />}
                 </Palette>
-                <h2 className={styles.client} key={project.client}>
-                  {project.client}
+                <h2 className={styles.where} key={project.where}>
+                  {project.where}
                 </h2>
-                <div className={styles.service} key={project.service}>
-                  {project.service}
+                <div className={styles.service} key={project.state}>
+                  {project.state}
                 </div>
               </Link>
             </div>
