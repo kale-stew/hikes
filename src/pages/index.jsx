@@ -4,7 +4,7 @@ import config from '../../config/SiteConfig';
 import ProjectListing from '../components/ProjectListing/ProjectListing';
 import Footer from '../components/Footer/Footer';
 
-const Index = props => {
+const Index = (props) => {
   const projectEdges = props.data.allMarkdownRemark.edges;
   return (
     <div className="container index-container">
