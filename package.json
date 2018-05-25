@@ -1,10 +1,10 @@
 {
-  "name": "gatsby-starter-portfolio-emma",
-  "description": "Gatsby Starter Portfolio Emma",
+  "name": "gatsby-hikes",
+  "description": "@TODO",
   "version": "1.1.0",
-  "author": "LekoArts <hello@lekoarts.de> (https://www.lekoarts.de)",
+  "author": "@TODO",
   "repository": {
-    "url": "https://github.com/LeKoArts/gatsby-starter-portfolio-emma",
+    "url": "@TODO",
     "type": "git"
   },
   "dependencies": {
@@ -49,6 +49,7 @@
   "scripts": {
     "build": "gatsby build",
     "dev": "gatsby develop -o",
+    "prettier": "",
     "postinstall": "node ./bin/hello.js"
   },
   "devDependencies": {
