@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Link from 'gatsby-link';
 import Headroom from 'react-headroom';
-import { FaInstagram, FaBehance, FaDribbble } from 'react-icons/lib/fa';
+import { FaInstagram, FaTwitter } from 'react-icons/lib/fa';
 import { slide as Menu } from 'react-burger-menu';
 import { Fade } from 'react-reveal';
 import config from '../../../config/SiteConfig';
@@ -48,14 +48,11 @@ export default class Navigation extends Component {
             </div>
             <div className={styles.socialMedia}>
               <span>
-                <a href="https://www.instagram.com/lekoarts.de" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/kalestews" target="_blank" rel="noopener noreferrer">
                   <FaInstagram />
                 </a>
-                <a href="https://www.behance.net/lekoarts" target="_blank" rel="noopener noreferrer">
-                  <FaBehance />
-                </a>
-                <a href="https://dribbble.com/LeKoArts" target="_blank" rel="noopener noreferrer">
-                  <FaDribbble />
+                <a href="https://www.twitter.com/kyliestew" target="_blank" rel="noopener noreferrer">
+                  <FaTwitter />
                 </a>
               </span>
             </div>
@@ -77,14 +74,11 @@ export default class Navigation extends Component {
                 Contact
               </Link>
               <div className={styles.mobileNavSocialMedia}>
-                <a href="https://www.instagram.com/lekoarts.de" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/kalestews" target="_blank" rel="noopener noreferrer">
                   <FaInstagram />
                 </a>
-                <a href="https://www.behance.net/lekoarts" target="_blank" rel="noopener noreferrer">
-                  <FaBehance />
-                </a>
-                <a href="https://dribbble.com/LeKoArts" target="_blank" rel="noopener noreferrer">
-                  <FaDribbble />
+                <a href="https://www.twitter.com/kyliestew" target="_blank" rel="noopener noreferrer">
+                  <FaTwitter />
                 </a>
               </div>
             </Menu>
