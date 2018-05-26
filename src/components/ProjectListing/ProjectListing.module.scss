@@ -1,4 +1,4 @@
-@import "../../../config/variables";
+@import '../../../config/variables';
 
 .base {
   display: grid;
@@ -23,7 +23,7 @@
   position: relative;
 
   &:before {
-    content: "";
+    content: '';
     display: block;
     padding-top: 100%;
   }

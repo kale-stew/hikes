@@ -5,7 +5,7 @@ const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix;
 module.exports = {
   pathPrefix: config.pathPrefix,
   siteMetadata: {
-    siteUrl: config.siteUrl + pathPrefix,
+    siteUrl: config.siteUrl + pathPrefix
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -13,8 +13,8 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'projects',
-        path: `${__dirname}/content/hikes`,
-      },
+        path: `${__dirname}/content/hikes`
+      }
     },
     {
       resolve: 'gatsby-transformer-remark',
@@ -25,33 +25,33 @@ module.exports = {
             options: {
               maxWidth: 1600,
               quality: 90,
-              linkImagesToOriginal: false,
-            },
+              linkImagesToOriginal: false
+            }
           },
           {
             resolve: 'gatsby-remark-external-links',
             options: {
               target: '_blank',
-              rel: 'nofollow noopener noreferrer',
-            },
+              rel: 'nofollow noopener noreferrer'
+            }
           },
           {
-            resolve: 'gatsby-remark-responsive-iframe',
-          },
-        ],
-      },
+            resolve: 'gatsby-remark-responsive-iframe'
+          }
+        ]
+      }
     },
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: config.googleAnalyticsID,
-      },
+        trackingId: config.googleAnalyticsID
+      }
     },
     {
       resolve: 'gatsby-plugin-nprogress',
       options: {
-        color: config.themeColor,
-      },
+        color: config.themeColor
+      }
     },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
@@ -59,8 +59,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-typography',
       options: {
-        pathToConfigModule: 'src/utils/typography.jsx',
-      },
+        pathToConfigModule: 'src/utils/typography.jsx'
+      }
     },
     'gatsby-plugin-catch-links',
     'gatsby-plugin-sitemap',
@@ -79,11 +79,11 @@ module.exports = {
           {
             src: '/logos/logo-192x192.png',
             sizes: '192x192',
-            type: 'image/png',
-          },
-        ],
-      },
+            type: 'image/png'
+          }
+        ]
+      }
     },
-    'gatsby-plugin-offline',
-  ],
+    'gatsby-plugin-offline'
+  ]
 };

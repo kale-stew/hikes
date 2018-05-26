@@ -39,20 +39,20 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             }
           }
         }
-      `).then(result => {
+      `).then((result) => {
         if (result.errors) {
           /* eslint no-console: "off" */
           console.log(result.errors);
           reject(result.errors);
         }
 
-        result.data.projects.edges.forEach(edge => {
+        result.data.projects.edges.forEach((edge) => {
           createPage({
             path: edge.node.fields.slug,
             component: projectPage,
             context: {
-              slug: edge.node.fields.slug,
-            },
+              slug: edge.node.fields.slug
+            }
           });
         });
       })

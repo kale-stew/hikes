@@ -22,5 +22,5 @@ module.exports = {
   // Settings for typography.js
   headerFontFamily: 'Merriweather',
   bodyFontFamily: 'Roboto',
-  baseFontSize: '16px',
+  baseFontSize: '16px'
 };

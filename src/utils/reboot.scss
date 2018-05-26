@@ -84,7 +84,7 @@ body {
 // might still respond to pointer events.
 //
 // Credit: https://github.com/suitcss/base
-[tabindex="-1"]:focus {
+[tabindex='-1']:focus {
   outline: none !important;
 }
 
@@ -164,7 +164,7 @@ img {
 // for traditionally non-focusable elements with role="button"
 // see https://developer.mozilla.org/en-US/docs/Web/Events/click#Safari_Mobile
 
-[role="button"] {
+[role='button'] {
   cursor: pointer;
 }
 
@@ -181,7 +181,7 @@ img {
 a,
 area,
 button,
-[role="button"],
+[role='button'],
 input,
 label,
 select,
@@ -242,8 +242,8 @@ textarea {
   line-height: inherit;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
+input[type='radio'],
+input[type='checkbox'] {
   // Apply a disabled cursor for radios and checkboxes.
   //
   // Note: Neither radios nor checkboxes can be readonly.
@@ -252,10 +252,10 @@ input[type="checkbox"] {
   }
 }
 
-input[type="date"],
-input[type="time"],
-input[type="datetime-local"],
-input[type="month"] {
+input[type='date'],
+input[type='time'],
+input[type='datetime-local'],
+input[type='month'] {
   // Remove the default appearance of temporal inputs to avoid a Mobile Safari
   // bug where setting a custom line-height prevents text from being vertically
   // centered within the input.
@@ -292,7 +292,7 @@ legend {
   width: 100%;
 }
 
-input[type="search"] {
+input[type='search'] {
   // This overrides the extra rounded corners on search inputs in iOS so that our
   // `.form-control` class can properly style them. Note that this cannot simply
   // be added to `.form-control` as it's not specific enough. For details, see
