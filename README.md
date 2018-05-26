@@ -13,5 +13,4 @@ See the live version [here](@TODO_LINK).
 `build` | Build the thing!
 `dev` | Spin up a local instance of the blog
 `prettier` | Prettify things
-`postinstall` |
-`test` | Test the thing
+`start` | Start the application
