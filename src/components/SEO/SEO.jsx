@@ -2,13 +2,14 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import config from '../../../config/SiteConfig';
 
-const SEO = props => {
+const SEO = (props) => {
   const { postNode, postPath, postSEO } = props;
   let title;
   let description;
   let image;
   let postURL;
   const realPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix;
+
   if (postSEO) {
     const postMeta = postNode.frontmatter;
     title = postMeta.title; // eslint-disable-line prefer-destructuring
@@ -20,8 +21,11 @@ const SEO = props => {
     description = config.siteDescription;
     image = config.siteLogo;
   }
+
   image = config.siteUrl + realPrefix + image;
+
   const blogURL = config.siteUrl + config.pathPrefix;
+
   const schemaOrgJSONLD = [
     {
       '@context': 'http://schema.org',
@@ -31,6 +35,7 @@ const SEO = props => {
       alternateName: config.siteTitleAlt ? config.siteTitleAlt : '',
     },
   ];
+
   if (postSEO) {
     schemaOrgJSONLD.push([
       {
@@ -63,6 +68,7 @@ const SEO = props => {
       },
     ]);
   }
+
   return (
     <Helmet>
       <meta name="description" content={description} />

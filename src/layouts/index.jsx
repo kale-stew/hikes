@@ -8,7 +8,7 @@ import '../utils/emma.scss';
 import favicon from './favicon.ico';
 import appleIcon from './apple-icon.png';
 
-const MainLayout = props => {
+const MainLayout = (props) => {
   const { children } = props;
   return (
     <React.Fragment>
@@ -16,7 +16,10 @@ const MainLayout = props => {
         <html lang={config.siteLanguage} />
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale = 1.0, maximum-scale=1.0"
+        />
         <link rel="shortcut icon" href={favicon} />
         <link rel="apple-touch-icon" href={appleIcon} />
         <title>{config.siteTitle}</title>

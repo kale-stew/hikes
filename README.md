@@ -8,7 +8,7 @@ See the live version [here](@TODO_LINK).
 
 ### Scripts
 
-`npm run <script>` | Description
+`yarn run <script>` | Description
 ------------------ | -----------
 `build` | Build the thing!
 `dev` | Spin up a local instance of the blog

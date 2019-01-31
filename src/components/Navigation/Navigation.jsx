@@ -24,6 +24,7 @@ export default class Navigation extends Component {
   closeMenu() {
     this.setState({ menuOpen: false });
   }
+
   render() {
     return (
       <header>
@@ -48,10 +49,18 @@ export default class Navigation extends Component {
             </div>
             <div className={styles.socialMedia}>
               <span>
-                <a href="https://www.instagram.com/kalestews" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://www.instagram.com/kalestews"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaInstagram />
                 </a>
-                <a href="https://www.twitter.com/kyliestew" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://www.twitter.com/kyliestew"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaTwitter />
                 </a>
               </span>
@@ -74,10 +83,18 @@ export default class Navigation extends Component {
                 Contact
               </Link>
               <div className={styles.mobileNavSocialMedia}>
-                <a href="https://www.instagram.com/kalestews" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://www.instagram.com/kalestews"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaInstagram />
                 </a>
-                <a href="https://www.twitter.com/kyliestew" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://www.twitter.com/kyliestew"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaTwitter />
                 </a>
               </div>
