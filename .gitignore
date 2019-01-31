@@ -8,3 +8,7 @@ node_modules/*
 public/
 .DS_Store
 yarn-error.log
+
+# Package Managers
+package-lock.json
+yarn.lock
