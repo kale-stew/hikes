@@ -25,11 +25,12 @@ Every new post lives within its own folder in `content/hikes`, and needs the fol
 
 ```
 ---
-where: ""
+client: "YEAR"
 title: ""
 cover: "./cover.jpg"
-date: "YEAR-MM-DD"
-state: ""
+date: "YYYY-MM-DD"
+service: "<LOCATION> National Park"
+color: "#7d92ad"
 ---
 
 ## Hike Description
