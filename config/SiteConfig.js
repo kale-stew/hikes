@@ -1,17 +1,15 @@
 module.exports = {
-  pathPrefix: '/', // Prefix for all links. If you deploy your site to example.com/portfolio your pathPrefix should be "portfolio"
-  siteTitle: '@TODO', // Navigation and Site Title
-  siteTitleAlt: '@TODO', // Alternative Site title for SEO
-  siteUrl: '@TODO', // Domain of your site. No trailing slash!
+  pathPrefix: '/hikes', // Prefix for all links
+  siteTitle: 'Hikes | kylieis.online',
+  siteTitleAlt: "Kylie Stewart's Hiking Blog",
+  siteUrl: 'https://kylieis.online/hikes',
   siteLanguage: 'en', // Language Tag on <html> element
   siteLogo: '/logos/logo-192x192.png', // Used for SEO and manifest
-  siteDescription: '@TODO',
-  siteFBAppID: '123456789', // Facebook App ID
+  siteDescription: 'A blog of photos from hikes Kylie Stewart has been on.',
   userTwitter: 'kyliestew',
-  // og: Meta Tags
-  ogSiteName: '@TODO', // Facebook Site Name
-  googleAnalyticsID: 'UA-12345689-1',
-  copyright: 'Copyright © 2017. All rights reserved.',
+  googleAnalyticsID: 'UA-110206200-2',
+  copyright: 'Copyright © 2020. All rights reserved.',
+  // Key-map settings
   where: 'Location',
   date: 'Date',
   state: 'State',
