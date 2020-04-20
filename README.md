@@ -21,7 +21,7 @@ Every new post lives within its own folder in `content/hikes`, and needs the fol
 - [ ] The folder name to reflect the hike date and a key word in reference (YYYY-ShortDescrip)
 - [ ] A `cover.jpg/png` img to show on the home screen
 - [ ] Any other imgs to reference in the blog post
-- [ ] An `index.md` containing all necessary blog post data (below)
+- [ ] An `index.mdx` containing all necessary blog post data (below)
 
 ```
 ---
